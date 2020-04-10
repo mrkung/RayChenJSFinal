@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Javascript Project</title>
+    <link rel="stylesheet" href="FINAL.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body class="background2">
+  <div class="grid-container1">
+    <div class="category1">
+      <h1 class="category1text">Animals</h1>
+      <button>Start</button>
+      <button onclick="calcValue()">Finish</button>
+    </div>
+    <div class="category2">Food</div>
+    <div class="category3">Celebrities</div>
+    <div class="category4">Internet Lingo</div>
+  </div>
+
+  <div class="grid-container2">
+    <!--animals-->
+    <div class="q1">10pt</div>
+    <div class="q2">20pt</div>
+    <div class="q3">30pt</div>
+    <div class="q4">40pt</div>
+    <div class="q5">50pt</div>
+    <!--food-->
+    <div class="q6">10pt</div>
+    <div class="q7">20pt</div>
+    <div class="q8">30pt</div>
+    <div class="q9">40pt</div>
+    <div class="q10">50pt</div>
+    <!--celebs-->
+    <div class="q11">10pt</div>
+    <div class="q12">20pt</div>
+    <div class="q13">30pt</div>
+    <div class="q14">40pt</div>
+    <div class="q15">50pt</div>
+    <!--Internet lingo-->
+    <div class="q16">10pt</div>
+    <div class="q17">20pt</div>
+    <div class="q18">30pt</div>
+    <div class="q19">40pt</div>
+    <div class="q20">50pt</div>
+  </div>
+
+  <div class="q1blurb invisible">
+    <h1 class="q1title invisible">What is the smallest organism on this list that has individual personalities?</h1>
+    <h3 class="q1ansa invisible" onclick="wrongAns1()">a. Cyanobacteria</h3>
+    <h3 class="q1ansb invisible" onclick="rightAns1()">b. Cockroaches</h3>
+    <h3 class="q1ansc invisible" onclick="wrongAns1()">c. Crows</h3>
+    <h3 class="q1ansd invisible" onclick="wrongAns1()">d. Cats</h3>
+  </div>
+  <div class="q2blurb invisible">
+    <h1 class="q2title invisible">How do you refer to a group of zebra?</h1>
+    <h3 class="q2ansa invisible" onclick="rightAns2()">a. A dazzle</h3>
+    <h3 class="q2ansb invisible" onclick="wrongAns2()">b. A drizzle</h3>
+    <h3 class="q2ansc invisible" onclick="wrongAns2()">c. A dash</h3>
+    <h3 class="q2ansd invisible" onclick="wrongAns2()">d. A dart</h3>
+  </div>
+  <div class="q3blurb invisible">
+    <h1 class="q3title invisible">Which of the following are real allergies caused by animals?</h1>
+    <h3 class="q3ansa invisible" onclick="wrongAns3()">a. Dog tongue allergy</h3>
+    <h3 class="q3ansb invisible" onclick="wrongAns3()">b. Rabbit nose allergy</h3>
+    <h3 class="q3ansc invisible" onclick="wrongAns3()">c. Snake eye allergy</h3>
+    <h3 class="q3ansd invisible" onclick="rightAns3()">d. Fish smell allergy</h3>
+  </div>
+  <div class="q4blurb invisible">
+    <h1 class="q4title invisible">Which of the following organisms could survive in space?</h1>
+    <h3 class="q4ansa invisible" onclick="wrongAns4()">a. Listeria</h3>
+    <h3 class="q4ansb invisible" onclick="wrongAns4()">b. Cyanobacteria</h3>
+    <h3 class="q4ansc invisible" onclick="rightAns4()">c. Tardigrades</h3>
+    <h3 class="q4ansd invisible" onclick="wrongAns4()">d. The kangaroo</h3>
+  </div>
+  <div class="q5blurb invisible">
+    <h1 class="q5title invisible">I hate air yet I breathe. I am as cold in my life as in my death. I am never thirsty though I always drink. What am I?</h1>
+    <button class="q5ansbtn invisible" onclick="storeValue1()">Enter Answer</button>
+    <input class="q5ans invisible" type="text"></input>
+  </div>
+  <div class="q6blurb invisible">
+    <h1 class="q6title invisible">I am considered a cake by modern standards but the word "cake" is not in my name. What am I?</h1>
+    <button class="q6ansbtn invisible" onclick="storeValue2()">Enter Answer</button>
+    <input class="q6ans invisible" type="text"></input>
+  </div>
+  <div class="q7blurb invisible">
+    <h1 class="q7title invisible">Following the 9.0 earthquake that devastated Japan in 2011, which product did Taiwan NOT stop importing from Fukushima?</h1>
+    <h3 class="q7ansa invisible" onclick="wrongAns5()">a. Lumber</h3>
+    <h3 class="q7ansb invisible" onclick="wrongAns5()">b. Sake</h3>
+    <h3 class="q7ansc invisible" onclick="rightAns5()">c. Paper</h3>
+    <h3 class="q7ansd invisible" onclick="wrongAns5()">d. Milk</h3>
+  </div>
+  <div class="q8blurb invisible">
+    <h1 class="q8title invisible">Nutella uses how many percent of the world's hazelnuts?</h1>
+    <h3 class="q8ansa invisible" onclick="wrongAns6()">a. 37%</h3>
+    <h3 class="q8ansb invisible" onclick="rightAns6()">b. 25%</h3>
+    <h3 class="q8ansc invisible" onclick="wrongAns6()">c. 10%</h3>
+    <h3 class="q8ansd invisible" onclick="wrongAns6()">d. 43%</h3>
+  </div>
+  <div class="q9blurb invisible">
+    <h1 class="q9title invisible">The U.S. National Donut day was established to celebrate which of the following?</h1>
+    <h3 class="q9ansa invisible" onclick="wrongAns7()">a. The soup kitchens during the Great Depression</h3>
+    <h3 class="q9ansb invisible" onclick="wrongAns7()">b. The Red Cross Organization during World War II</h3>
+    <h3 class="q9ansc invisible" onclick="rightAns7()">c. The Salvation Army volunteers during World War I</h3>
+    <h3 class="q9ansd invisible" onclick="wrongAns7()">d. The Knights of Labor during the Panic of 1873</h3>
+  </div>
+  <div class="q10blurb invisible">
+    <h1 class="q10title invisible">What ingredient is not in the recipe for Alain Passard's Tomates confites aux douze saveurs selon (confit tomatoes with twelve flavors)?</h1>
+    <h3 class="q10ansa invisible" onclick="rightAns8()">a. Pecans</h3>
+    <h3 class="q10ansb invisible" onclick="wrongAns8()">b. Pineapples</h3>
+    <h3 class="q10ansc invisible" onclick="wrongAns8()">c. Pears</h3>
+    <h3 class="q10ansd invisible" onclick="wrongAns8()">d. Pistachios</h3>
+  </div>
+  <div class="q11blurb invisible">
+    <h1 class="q11title invisible">An insect species was named after this singer</h1>
+    <h3 class="q11ansa invisible" onclick="wrongAns9()">a. Lady Gaga</h3>
+    <h3 class="q11ansb invisible" onclick="wrongAns9()">b. Mariah Carrey</h3>
+    <h3 class="q11ansc invisible" onclick="wrongAns9()">c. Whitney Houston</h3>
+    <h3 class="q11ansd invisible" onclick="rightAns9()">d. Beyonce</h3>
+  </div>
+  <div class="q12blurb invisible">
+    <h1 class="q12title invisible">This celebrity's acting career was prompted by a hallucination they got when they contracted malaria in South Africa (Hint: most of the following celebrities are from South Africa)</h1>
+    <h3 class="q12ansa invisible" onclick="wrongAns10()">a. Charlize Theron</h3>
+    <h3 class="q12ansb invisible" onclick="rightAns10()">b. Rebel Wilson</h3>
+    <h3 class="q12ansc invisible" onclick="wrongAns10()">c. Elon Musk</h3>
+    <h3 class="q12ansd invisible" onclick="wrongAns10()">d. Troye Sivan</h3>
+    <h3 class="q12anse invisible" onclick="wrongAns10()">e. Madelaine Petsch</h3>
+  </div>
+  <div class="q13blurb invisible">
+    <h1 class="q13title invisible">This celebrity collects their fans' baby teeth</h1>
+    <h3 class="q13ansa invisible" onclick="wrongAns11()">a. Jared Leto</h3>
+    <h3 class="q13ansb invisible" onclick="wrongAns11()">b. Eminem</h3>
+    <h3 class="q13ansc invisible" onclick="rightAns11()">c. Ke$ha</h3>
+    <h3 class="q13ansd invisible" onclick="wrongAns11()">d. Johnny Depp</h3>
+    <h3 class="q13anse invisible" onclick="wrongAns11()">e. Britney Spears</h3>
+  </div>
+  <div class="q14blurb invisible">
+    <h1 class="q14title invisible">This celebrity went by the name Eric Marlon Bishop before they were discovered</h1>
+    <h3 class="q14ansa invisible" onclick="wrongAns12()">a. Zayn Malik</h3>
+    <h3 class="q14ansb invisible" onclick="rightAns12()">b. Jamie Foxx</h3>
+    <h3 class="q14ansc invisible" onclick="wrongAns12()">c. Ben Affleck</h3>
+    <h3 class="q14ansd invisible" onclick="wrongAns12()">d. Elton John</h3>
+    <h3 class="q143anse invisible" onclick="wrongAns12()">e. Brad Pitt</h3>
+  </div>
+  <div class="q15blurb invisible">
+    <h1 class="q15title invisible">This celebrity topped the Canadian iTunes with 8 seconds of static</h1>
+    <h3 class="q15ansa invisible" onclick="wrongAns13()">a. Selena Gomez</h3>
+    <h3 class="q15ansansb invisible" onclick="wrongAns13()">b. Katy Perry</h3>
+    <h3 class="q15ansc invisible" onclick="wrongAns13()">c. Jennifer Lopez</h3>
+    <h3 class="q15ansd invisible" onclick="rightAns13()">d. Taylor Swift</h3>
+  </div>
+  <div class="q16blurb invisible">
+    <h1 class="q16title invisible">What does "fleek" mean?</h1>
+    <h3 class="q16ansa invisible" onclick="rightAns14()">a. Flawlessly styled</h3>
+    <h3 class="q16ansansb invisible" onclick="wrongAns14()">b. Oddly specific</h3>
+    <h3 class="q16ansc invisible" onclick="wrongAns14()">c. Out of the blue</h3>
+    <h3 class="q16ansd invisible" onclick="wrongAns14()">d. Strangely dressed</h3>
+  </div>
+  <div class="q17blurb invisible">
+    <h1 class="q17title invisible">What is "wig!"" used to describe?</h1>
+    <h3 class="q17ansa invisible" onclick="wrongAns15()">a. A joyous event</h3>
+    <h3 class="q17ansansb invisible" onclick="rightAns15()">b. An exciting or unbelievable event</h3>
+    <h3 class="q17ansc invisible" onclick="wrongAns15()">c. A terrifying event</h3>
+    <h3 class="q17ansd invisible" onclick="wrongAns15()">d. A fabricated event</h3>
+  </div>
+  <div class="q18blurb invisible">
+    <h1 class="q18title invisible">What does "TL;DR" stand for?</h1>
+    <h3 class="q18ansa invisible" onclick="wrongAns16()">a. Too lazy didn’t read</h3>
+    <h3 class="q18ansansb invisible" onclick="wrongAns16()">b. Too languid didn’t read</h3>
+    <h3 class="q18ansc invisible" onclick="wrongAns16()">c. Take linguini don’t re-order</h3>
+    <h3 class="q18ansd invisible" onclick="rightAns16()">d. Too long didn’t read</h3>
+  </div>
+  <div class="q19blurb invisible">
+    <h1 class="q19title invisible">Define "woke"</h1>
+    <h3 class="q19ansa invisible" onclick="rightAns17()">a. Genuine concern for social justice issues</h3>
+    <h3 class="q19ansansb invisible" onclick="wrongAns17()">b. Feigned concern for social justice issues</h3>
+    <h3 class="q19ansc invisible" onclick="wrongAns17()">c. Indifference toward social justice issues</h3>
+    <h3 class="q19ansd invisible" onclick="wrongAns17()">d. Lack of awareness of social justice issues</h3>
+  </div>
+  <div class="q20blurb invisible">
+    <h1 class="q20title invisible">What is Ray's favorite Internet slang?</h1>
+    <button class="q20ansbtn invisible" onclick="storeValue3()">Enter Answer</button>
+    <input class="q20ans invisible" type="text"></input>
+  </div>
+
+<script src="FINAL.js"></script>
+</body>
+</html>
